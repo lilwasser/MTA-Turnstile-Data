@@ -7,7 +7,7 @@
 ### What is the framing question of your analysis, or the purpose of the model/system you plan to build?
 
 
-Where can NYC commuters find seasonal flu vaccination sites that are located nearby their subway stations during non-work hours  (7-9am, 4-6pm) between Dec 1 2019 - Jan 31 2020, and how might clinics use this information to open pop-up sites to garner the most foot traffic?
+Where can NYC commuters find seasonal flu vaccination sites that are located nearby their subway stations during non-work hours  (7-9am, 4-6pm) between Nov 1 2019 - Jan 31 2020, and how might clinics use this information to open pop-up sites to garner the most foot traffic?
 
 
 
@@ -21,7 +21,7 @@ Health clinics that want to open other pop-up clinic locations to target the mos
 
 ### What dataset(s) do you plan to use, and how will you obtain the data?
 
-MTA Turnstile Data  (Dec 1 2019 - Jan 31 2020)
+MTA Turnstile Data  (Nov 1 2019 - Jan 31 2020)
 
 http://web.mta.info/developers/turnstile.html 
 
