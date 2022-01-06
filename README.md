@@ -1,5 +1,6 @@
 # Metis Project Proposal I: Exploratory Data Analysis
 
+https://data.cityofnewyork.us/Health/NYC-Condom-Availability-Program-HIV-condom-distrib/4kpn-sezh
 
 
 ## QUESTION/NEED:
@@ -7,7 +8,7 @@
 ### What is the framing question of your analysis, or the purpose of the model/system you plan to build?
 
 
-Where can NYC commuters find seasonal flu vaccination sites that are located nearby their subway stations during non-work hours  (7-9am, 4-6pm) between Nov 1 2019 - Jan 31 2020, and how might clinics use this information to open pop-up sites to garner the most foot traffic?
+Where can NYC commuters find free safer sex supplies and resources at venues located nearby their subway stations during non-work hours  (7-9am, 4-7pm) between Oct 1 2021 - Dec 31 2021, and how might public health clinics use this information to open pop-up sites to garner the most foot traffic?
 
 
 
@@ -16,21 +17,19 @@ Where can NYC commuters find seasonal flu vaccination sites that are located nea
 ### Who benefits from exploring this question or building this model/system?
 
 
-Health clinics that want to open other pop-up clinic locations to target the most foottraffic in NYC would benefit from this question, as well as NYC residents wanting to get vaccinated outside of typical work hours (7-9am, 4-6pm).
+Health clinics that want to open other pop-up clinic locations to target the most foottraffic in NYC would benefit from this question, as well as NYC residents wanting to get safer sex supplies outside of typical work hours (7-9am, 4-7pm).
 
 
 ### What dataset(s) do you plan to use, and how will you obtain the data?
 
-MTA Turnstile Data  (Nov 1 2019 - Jan 31 2020)
+MTA turnstile data  (Oct 1 2021 - Dec 31 2021)
 
 http://web.mta.info/developers/turnstile.html 
 
 
+NYC Venues providing safe sex products and resources (Oct 1 2021 - Dec 31 2021)
 
-NYC Locations Providing Seasonal Flu Vaccinations (Dec 2019 - Jan 2020)
-(We are entering cold and flu season, in addition to contending with coronavirus)
-
-https://data.cityofnewyork.us/Health/New-York-City-Locations-Providing-Seasonal-Flu-Vac/w9ei-idxz
+https://data.cityofnewyork.us/Health/NYC-Condom-Availability-Program-HIV-condom-distrib/4kpn-sezh
 
     
 I plan to collect the data using SQLAlchemy and visualize with Plotly.
@@ -39,15 +38,12 @@ I plan to collect the data using SQLAlchemy and visualize with Plotly.
 ### What is an individual sample/unit of analysis in this project? What characteristics/features do you expect to work with?
 
 
-An individual sample for the MTA dataset would include which stations have the most foot traffic (entrances and exits) during non-work hours (7-9am, 4-6pm). 
-An individual sample for the Flu Vaccination dataset would include the address, borough, and children (when can children get vaccinated). 
-
-
+An individual sample for the MTA dataset would include which stations have the most foot traffic (entrances and exits) during non-work hours (7-9am, 4-7pm). Units: entries, exits, date, time, station.
+An individual sample for the Safe Sex dataset would include the address, borough, hours (Monday, Tues, Wed, Thurs, Fri, Sat, Sun), supplies (check T/F: condoms, FC2 (female condoms), lubricant.
 ### If modeling, what will you predict as your target?
 
 
-I would expect to find heavier foot traffic around flu vaccination sites that are close to subway stations. 
-
+I would expect to find heavier foot traffic around safe sex sites that are close to subway stations. 
 
 
 ## TOOLS:
@@ -71,4 +67,4 @@ Plotly.
 ### What would a minimum viable product (MVP) look like for this project?
 
 
-I will use a correlation analysis to understand the foot traffic near subway stations and use that to predict which clinics would garner the most success in vaccinating NYC commuters, and also predict where pop-up clinics might be best located in time for the 2021 flu season. 
+I will use a correlation analysis to understand the foot traffic near subway stations and use that to predict which clinics would garner the most success in providing supplies to NYC commuters, and also predict where pop-up clinics might be best located for 2022.
