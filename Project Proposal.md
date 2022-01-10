@@ -9,7 +9,7 @@ https://data.cityofnewyork.us/Health/NYC-Condom-Availability-Program-HIV-condom-
 
 Where can NYC commuters find free safer sex supplies and resources at venues located nearby the most heavily used subway stations during non-work hours (M-F: 4-8pm) between March 20 - June 20 2021?
 
-I plan on exploring the MTA turnstile data to discover which stations have the highest foot traffic in order to help NYC  Department of Public Health identify which existing clinics garner the most foot traffic and therefore should receive additional funding to distribute safe sex supplies.
+I plan on exploring the MTA turnstile data to discover which stations have the highest foot traffic in order to help NYC  Department of Public Health identify which existing clinics garner the most foot traffic and therefore should receive additional funding to distribute safe sex supplies. I will look at the top 3 busiest stations and then use location data to see which clinics in those surrounding areas should receive more funding.
 
 In order to prepare for safe sex supply distributions in spring 2022, I am looking at data between March 20 - June 20 2021. I am assuming that people will be more likely seek these types of supplies outside of work hours, so I am looking at MTA exits that are outside of regular working hours (time frame: 4-8pm M-F (workdays)). This will provide insights about the busiest and least busy stations. 
 
@@ -18,7 +18,7 @@ In order to prepare for safe sex supply distributions in spring 2022, I am looki
 
 ### Who benefits from exploring this question or building this model/system?
 
-My fictitious client, NYC Department of Public Health, wants to provide more funding to the top 3 exisiting clinics that distribute free sexual health supplies and garner the most foot traffic outside of typical work hours (M-F: 7-9am, 4-7pm) based on MTA exits data.
+My fictitious client, NYC Department of Public Health, wants to provide more funding to exisiting clinics that distribute free sexual health supplies and garner the most foot traffic outside of typical work hours (M-F: 7-9am, 4-7pm) based on MTA exits data.
 
 
 ### What dataset(s) do you plan to use, and how will you obtain the data?
@@ -39,7 +39,7 @@ I plan to collect the data using SQLAlchemy and visualize with Plotly.
 ### What is an individual sample/unit of analysis in this project? What characteristics/features do you expect to work with?
 
 
-An individual sample for the MTA dataset would include which stations have the most foot traffic (entrances and exits) during non-work hours (7-9am, 4-7pm). Units: entries, exits, date, time, station.
+An individual sample for the MTA dataset would include which stations have the most foot traffic (entrances and exits) during non-work hours (MTWTF 4-8pm). Units: entries, exits, date, time, station.
 An individual sample for the Safe Sex dataset would include the address, borough, hours (Monday, Tues, Wed, Thurs, Fri, Sat, Sun), supplies (check T/F: condoms, FC2 (female condoms), lubricant)
 ### If modeling, what will you predict as your target?
 
@@ -67,5 +67,4 @@ Plotly.
 
 ### What would a minimum viable product (MVP) look like for this project?
 
-
-I will use a correlation analysis to understand the foot traffic near subway stations and use that to predict which clinics would garner the most success in providing supplies to NYC commuters, and also predict where pop-up clinics might be best located for 2022.
+I will use a correlation analysis to understand the foot traffic near subway stations and use that to predict which clinics would garner the most success in providing supplies to NYC commuters, and also predict which clinics might be best located to get the most traffic in 2022.
