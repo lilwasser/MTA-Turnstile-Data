@@ -7,27 +7,28 @@ https://data.cityofnewyork.us/Health/NYC-Condom-Availability-Program-HIV-condom-
 
 ### What is the framing question of your analysis, or the purpose of the model/system you plan to build?
 
+Where can NYC commuters find free safer sex supplies and resources at venues located nearby the most heavily used subway stations during non-work hours (M-F: 4-8pm) between March 20 - June 20 2021?
 
-Where can NYC commuters find free safer sex supplies and resources at venues located nearby their subway stations during non-work hours  (7-9am, 4-7pm) between Oct 1 2021 - Dec 31 2021, and how might public health clinics use this information to open pop-up sites to garner the most foot traffic?
+I plan on exploring the MTA turnstile data to discover which stations have the highest foot traffic in order to help NYC  Department of Public Health identify which existing clinics garner the most foot traffic and therefore should receive additional funding to distribute safe sex supplies.
 
+In order to prepare for safe sex supply distributions in spring 2022, I am looking at data between March 20 - June 20 2021. I am assuming that people will be more likely seek these types of supplies outside of work hours, so I am looking at MTA exits that are outside of regular working hours (time frame: 4-8pm M-F (workdays)). This will provide insights about the busiest and least busy stations. 
 
 
 ## DATA DESCRIPTION:
 
 ### Who benefits from exploring this question or building this model/system?
 
-
-Health clinics that want to open other pop-up clinic locations to target the most foottraffic in NYC would benefit from this question, as well as NYC residents wanting to get safer sex supplies outside of typical work hours (7-9am, 4-7pm).
+My fictitious client, NYC Department of Public Health, wants to provide more funding to the top 3 exisiting clinics that distribute free sexual health supplies and garner the most foot traffic outside of typical work hours (M-F: 7-9am, 4-7pm) based on MTA exits data.
 
 
 ### What dataset(s) do you plan to use, and how will you obtain the data?
 
-MTA turnstile data  (Oct 1 2021 - Dec 31 2021)
+MTA turnstile data  (March 20 - June 20 2021)
 
 http://web.mta.info/developers/turnstile.html 
 
 
-NYC Venues providing safe sex products and resources (Oct 1 2021 - Dec 31 2021)
+NYC Venues providing safe sex products and resources (March 20 - June 20 2021)
 
 https://data.cityofnewyork.us/Health/NYC-Condom-Availability-Program-HIV-condom-distrib/4kpn-sezh
 
@@ -39,7 +40,7 @@ I plan to collect the data using SQLAlchemy and visualize with Plotly.
 
 
 An individual sample for the MTA dataset would include which stations have the most foot traffic (entrances and exits) during non-work hours (7-9am, 4-7pm). Units: entries, exits, date, time, station.
-An individual sample for the Safe Sex dataset would include the address, borough, hours (Monday, Tues, Wed, Thurs, Fri, Sat, Sun), supplies (check T/F: condoms, FC2 (female condoms), lubricant.
+An individual sample for the Safe Sex dataset would include the address, borough, hours (Monday, Tues, Wed, Thurs, Fri, Sat, Sun), supplies (check T/F: condoms, FC2 (female condoms), lubricant)
 ### If modeling, what will you predict as your target?
 
 
