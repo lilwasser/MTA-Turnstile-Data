@@ -4,21 +4,18 @@
 
 The goal of this project was to provide insight into the relationship between Metropolitan Transportation Authority (MTA) turnstile activity, specifically its most heavily foot-trafficked stations, and the locations of sexual health clinics in New York. 
 
-To reduce statistical noise and maximize the chances that resources would get used, I focused on MTA traffic after work hours, between 4pm - 8pm, and months that would best equip my client for Spring 2022 traffic trends, so March-June 2021 data.
+To reduce statistical noise and maximize the chances that resources would get used, I focused on MTA traffic after work hours, between 4pm - 8pm, assuming that people would seek these types of services outside of their typical work day. I analyzed traffic over the course of Spring 2021 (March - June) to inform my client when to anticipate fluxes in traffic for Spring 2022. With these metrics, my client can best anticipate relative clinic traffic due to proximity to heavily used subway stations and allow them to readily stock up on supplies.
 
-
-I developed graphs using matplotlib to best visualize which stations had the most traffic in terms of daily average and overall traffic to best assess which nearby clinics to provide extra funding to. I also analyzed trends in traffic over the course of the chosen Spring time period, which informs my client when to anticipate fluxes in traffic in order to readily stock up on supplies. 
+I developed graphs using matplotlib to visualize which stations had the most traffic in terms of daily average and overall traffic to best assess which nearby clinics should receive additional resources and funding. 
 
 
 ## DESIGN:
 
 ### above: The clearly defined client backstory is exceptionally creative and involved, and is addressed in a highly proficient manner.
 
-My client, NYC Department of Health and Mental Hygiene (NYC DOHMH), offers free sexual health services and supplies through their NYC Condom Availability Program. Products are distributed at local businesses, community-based organizations, and health care facilities. The Program gives away more than 30 million free safer sex products every year to over 3,500 locations and across all five boroughs. In anticipation for Spring 2022, my client wants to know which MTA stations garner the most foot traffic outside of typical working hours (4pm - 8pm) and thus 
+My client, NYC Department of Health and Mental Hygiene (NYC DOHMH), offers free sexual health services and supplies through their NYC Condom Availability Program. Products are distributed at local businesses, community-based organizations, and health care facilities. The Program gives away more than 30 million free safer sex products every year to over 3,500 locations and across all five boroughs. 
 
-I plan on exploring the MTA turnstile data to discover which stations have the highest foot traffic in order to help NYC  Department of Public Health identify which existing clinics garner the most foot traffic and therefore should receive additional funding to distribute safe sex supplies. I will look at the top 3 busiest stations and then use location data to see which clinics in those surrounding areas should receive more funding.
-
-In order to prepare for safe sex supply distributions in spring 2022, I am looking at data between March 20 - June 20 2021. I am assuming that people will be more likely seek these types of supplies outside of work hours, so I am looking at MTA exits that are outside of regular working hours (time frame: 4-8pm M-F (workdays)). This will provide insights about the busiest and least busy stations. 
+The NYC DOMHM has asked me to help them prepare for safe sex supply distributions in Spring 2022, so I explored the MTA turnstile data from March - June to discover which stations had the highest foot traffic after work hours in Spring 2021. I assumed that people would be more likely seek these types of supplies outside of regular working hours and somewhere near their subway station once they get off work, so my time frame is between 4pm - 8pm Monday through Friday. I looked at the top 3 busiest stations based on overall traffic (exits+entries) and then used location data to identify which 3 nearby clinics would subsequently garner the most foot traffic and should receive additional resources and funding 
 
 ## DATA:
 
@@ -33,20 +30,19 @@ In order to prepare for safe sex supply distributions in spring 2022, I am looki
 
 ## ALGORITHMS:
 
-### Satisfactory: Exploratory data analysis and visualization techniques are effectively used to clean, aggregate, and visualize the data. Patterns and insights obtainable from the data are interpreted correctly.
-
 _*Data Cleaning*_
 
+** I pulled data from 2/27 to 6/26 of 2021 for my complete analysis. I started off by standardizing all the column names by clearing white space and providing a uniform format, and dropped unecessary columns. 
+** I removed all turnstile records that were not reported between the hours of 4 pm to 8 pm Monday - Friday.
 ** In some cases, the turnstiles were being counted in reverse, which led to inaccurate calculations in regards to entry and exit data. I cleaned up these errors early on in data analysis.
-** There were some outrageous numbers when it came to entry and exit data for a given turnstile. Even in one of the biggest cities in the world, it would be impossible for a single turnstile in New York to see 1 million entries in a given day. I created limits on these counters to account for outliers in the data.
+** There were some outrageous numbers when it came to entry and exit data for a given turnstile. Even in one of the biggest cities in the world, it would be impossible for a single turnstile in New York to see 1 million entries in a given day. I created thresholds on these counters to account for outliers in the data.
 ** I used a function to identify reverse counting, resets, and extra large numbers in the cumulative count for a turnstile.
-** I removed all turnstile records that were not reported between the hours of 4 pm to 8 pm.
-
 
 _*Analysis*_
 
-** I aggregated entry and exit data to create analysis on total station traffic using "merge" function in Pandas.
-
+** I aggregated entry and exit data to create analysis on total station traffic using a merge function in Pandas.
+** I noticed that station traffic increased from March - June for each station overall, as well as for the top 3 stations.
+** Traffic was typically greatest on Mondays.
 
 ## TOOLS:
 
@@ -59,17 +55,8 @@ _*Analysis*_
 ** Geocode
 ** Geopy
 
-
 ## COMMUNICATION
-### Above: Presentation has exceptional delivery, extremely clear structure, compelling in narrative and selection/construction of visualizations throughout. Slides are beautiful in style and design, carefully curated to draw attention to key information and complement the verbal delivery.
 
-I will present my analysis using Google Sheets.
-
-add a pic here!
-
-My high-level analysis will be presented in a slideshow using visualization created with Matplotlib and Seaborn. The set of Tableau dashboards I created for further analysis can be found here.
-
-Note that there are three dashboards worth exploring. This link takes you to the first dashboard, the Traffic Heatmap. Scroll to the bottom of the screen and click on "Station Comparison" and "Time Series" to explore further. You can also download the workbook and view it in the Tableau Public desktop app.
-
+My analysis will be presented in Google Sheets using visualizations created with Matplotlib, Seaborn, and Geocode.
 
 
