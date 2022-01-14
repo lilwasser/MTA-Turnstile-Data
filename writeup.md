@@ -1,4 +1,4 @@
-# Metis Project Proposal I: Exploratory Data Analysis
+# Metis Project I: Exploratory Data Analysis
 
 ## ABSTRACT:
 
