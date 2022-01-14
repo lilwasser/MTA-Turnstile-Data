@@ -7,7 +7,7 @@ The goal of this project was to provide insight into the relationship between Me
 To reduce statistical noise and maximize the chances that resources would get used, I focused on MTA traffic after work hours, between 4pm - 8pm, and months that would best equip my client for Spring 2022 traffic trends, so March-June 2021 data.
 
 
-I developed graphs using matplotlib to best visualize which stations had the most traffic in terms of daily average, overall traffic to best assess which nearby clinics to provide extra funding to. I also analyzed trends in traffic over the course of the chosen Spring time period, which informs my client when to anticipate fluxes in traffic in order to readily stock up on supplies. 
+I developed graphs using matplotlib to best visualize which stations had the most traffic in terms of daily average and overall traffic to best assess which nearby clinics to provide extra funding to. I also analyzed trends in traffic over the course of the chosen Spring time period, which informs my client when to anticipate fluxes in traffic in order to readily stock up on supplies. 
 
 
 ## DESIGN:
