@@ -1,4 +1,4 @@
-# metis_EDA_module
+# MTA Turnstile Data
 
 Minimum Viable Product (MVP)
 I will be exploring 3 months of MTA turnstile data and a dataset from NYC OpenData on NYC Department of Public Health's HIV condom distribution locations. My primary goal is to help NYC DPH identify which existing clinics garner the most foot traffic and therefore should receive additional funding to distribute safe sex supplies for Spring 2022. This will ensure that resources are getting distributed to the most people.
